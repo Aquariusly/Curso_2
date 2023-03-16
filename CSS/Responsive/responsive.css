@@ -16,10 +16,10 @@ body{
 
 section{
     display: grid;
-    width: 95%;
-    grid-template-columns: repeat(6,1fr);
-    place-items: center;
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
+    place-items: center;
 }
 
 div{
@@ -32,32 +32,26 @@ div{
     color: white;
 }
 
-
-
-@media only screen and (max-width: 900px) {
-    section{
-        grid-template-columns: repeat(5,1fr);
-    }
-}
-
 @media only screen and (max-width: 700px) {
     section{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
-
 @media only screen and (max-width: 500px) {
     section{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
     div{
         width: 200px;
         height: 200px;
     }
 }
-
-/* Establecer ancho minimo y maximo */
-@media only screen and (min-width: 400px) and (max-width: 600px) {
-
+@media only screen and (max-width: 350px) {
+    section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div{
+        width: 300px;
+        height: 300px;
+    }
 }
